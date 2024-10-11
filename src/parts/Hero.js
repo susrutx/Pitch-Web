@@ -13,14 +13,15 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="w-full lg:w-1/2 xl:pl-12 sm:pr-2 mt-8">
-        <h1 className="text-5xl sm:text-6xl text-theme-blue font-bold leading-tight mb-5">
-          Growing Your Business <br />
-          Is Our Calling
-        </h1>
+        <h2 className="text-5xl sm:text-5xl text-theme-blue font-bold mb-5">
+          Preserving Freshness <br />
+          with Precision and Care.
+        </h2>
 
         <p className="font-light text-xl text-gray-400 leading-relaxed mb-16">
-          We provide developers & designers using latest technologies to help
-          you scale up your business.
+          We provide advanced cold storage solutions for preserving fruits,
+          vegetables, and local produce. Our 7,422 MT capacity ensures your
+          perishable goods remain fresh and secure.
         </p>
         <Fade direction="up" delay={500} triggerOnce>
           <Button
