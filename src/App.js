@@ -6,7 +6,7 @@
 import { Route, Routes } from 'react-router-dom';
 
 import LandingPage from 'pages/LandingPage';
-import ProjectPage from 'pages/ProjectPage';
+import ServicesPage from 'pages/ServicesPage';
 import NotFoundPage from 'pages/NotFoundPage';
 import TeamPage from 'pages/TeamPage';
 
@@ -20,7 +20,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
-        <Route path="/project" element={<ProjectPage />} />
+        <Route path="/services" element={<ServicesPage />} />
         <Route exact path="/project/:id" element={<ProjectDetailPage />} />
         <Route exact path="/team" element={<TeamPage />} />
         <Route exact path="/discuss-project" element={<DiscussProjectPage />} />

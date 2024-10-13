@@ -12,7 +12,7 @@ import AllPortfolio from 'parts/AllPortfolio';
 
 import { Portfolios } from 'json/landingPageData';
 
-export default class ProjectPage extends Component {
+export default class ServicesPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

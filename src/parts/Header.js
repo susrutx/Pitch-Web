@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
-import { Transition } from '@headlessui/react';
-import { useLocation } from 'react-router-dom';
-import Button from '../elements/Button';
-import BrandIcon from './BrandIcon';
+import React, { useState } from "react";
+import { Transition } from "@headlessui/react";
+import { useLocation } from "react-router-dom";
+import Button from "../elements/Button";
+import BrandIcon from "./BrandIcon";
+import "../assets/css/header.css";
 
 export default function Header() {
   const [isCollapse, setIsCollapse] = useState(false);
   const path = useLocation().pathname;
 
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/team' },
-    { name: 'Services', href: '/project' },
-    { name: 'Technology', href: '/technology' },
-    { name: 'FAQ', href: '/faq' }
+    { name: "Home", href: "/" },
+    { name: "About", href: "/team" },
+    { name: "Services", href: "/services" },
+    { name: "Technology", href: "/technology" },
+    { name: "FAQ", href: "/faq" },
   ];
 
   return (
@@ -24,9 +25,27 @@ export default function Header() {
           className="block text-theme-blue lg:hidden focus:outline-none"
           onClick={() => setIsCollapse(!isCollapse)}
         >
-          <svg className="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path className={`${isCollapse ? 'hidden' : 'block'}`} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-            <path className={`${!isCollapse ? 'hidden' : 'block'}`} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+          <svg
+            className="w-8 h-8"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              className={`${isCollapse ? "hidden" : "block"}`}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+            <path
+              className={`${!isCollapse ? "hidden" : "block"}`}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
       </div>
@@ -35,7 +54,9 @@ export default function Header() {
         {navItems.map(({ name, href }) => (
           <li key={href} className="py-2 lg:py-0">
             <Button
-              className={`${path === href ? 'active-link' : ''} font-medium text-lg px-5 no-underline hover:underline`}
+              className={`${
+                path === href ? "active-link" : ""
+              } font-medium text-lg px-5 no-underline hover:underline`}
               type="link"
               href={href}
             >
@@ -68,7 +89,9 @@ export default function Header() {
             {navItems.map(({ name, href }) => (
               <li key={href} className="py-2 bg-white">
                 <Button
-                  className={`${path === href ? 'active-link' : ''} font-medium px-10 no-underline hover:underline`}
+                  className={`${
+                    path === href ? "active-link" : ""
+                  } font-medium px-10 no-underline hover:underline`}
                   type="link"
                   href={href}
                 >

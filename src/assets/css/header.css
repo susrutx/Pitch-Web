@@ -1,0 +1,9 @@
+.header {
+  @apply flex flex-col py-4 mb-4 justify-between;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    @apply container w-full flex-row py-8 mt-2 mb-4 mx-auto items-center content-center border-b border-gray-100;
+  }
+}
