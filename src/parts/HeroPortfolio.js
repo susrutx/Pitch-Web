@@ -1,11 +1,7 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable import/extensions */
-/* eslint-disable max-len */
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import heroPortfolio from "assets/images/hero/portfolioHero.png";
-import "../assets/css/service.css";
+import heroPortfolio from "assets/images/Services/portfolioHero.png";
+import "../assets/css/HeroPortfolio.css";
 
 export default function HeroPortfolio() {
   const services = [
@@ -57,7 +53,7 @@ export default function HeroPortfolio() {
   ];
 
   return (
-    <section className="services-section grid lg:grid-cols-2 gap-6 bg-white">
+    <section className="services-section1 grid lg:grid-cols-2 gap-6 bg-white">
       <div className="w-full flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:mt-6">
         <Fade direction="up" triggerOnce>
           <h1 className="text-5xl text-theme-blue font-bold leading-tight mb-5">
@@ -76,21 +72,29 @@ export default function HeroPortfolio() {
       {/* Image Section */}
       <div className="image-section">
         <Fade direction="up" triggerOnce>
-          <img src={heroPortfolio} alt="Hero" className="rounded-lg" />
+          <img src={heroPortfolio} alt="Hero" />
         </Fade>
       </div>
 
       {/* Tabs Section */}
-      <div className="tabs-section lg:col-span-2 grid grid-cols-1 md:grid-cols-3 mt-10">
+      <div className="tabs-section lg:col-span-2 grid grid-cols-1 gap-8 mt-10">
         {services.map((service, index) => (
           <div
             key={index}
-            className="service-tab p-6 rounded-lg shadow-lg bg-white hover:bg-gray-50 transition-transform transform hover:-translate-y-2"
+            className="service-tab flex lg:flex-row items-center p-6 rounded-lg shadow-lg bg-white hover:bg-gray-50 transition-transform transform hover:-translate-y-2"
           >
-            <h2 className="text-2xl font-semibold text-theme-blue mb-4">
-              {service.title}
-            </h2>
-            <p className="text-gray-700">{service.description}</p>
+            {/* Serial Number Column */}
+            <div className="serial-number flex justify-center items-center rounded-full text-white font-bold bg-theme-blue w-12 h-12 mr-4 lg:mr-8">
+              {index + 1}
+            </div>
+
+            {/* Title and Description Column */}
+            <div className="flex-1">
+              <h2 className="text-2xl font-semibold text-theme-blue mb-4 lg:text-left">
+                {service.title}
+              </h2>
+              <p className="text-gray-700">{service.description}</p>
+            </div>
           </div>
         ))}
       </div>
