@@ -1,6 +1,6 @@
 .services-section {
   position: relative;
-  height: 100vh; /* Full-screen height for the hero section */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,21 +15,16 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  opacity: 0.5; /* Light overlay for video */
+  opacity: 0.5;
 }
 
 .services-section .relative {
-  z-index: 10; /* Ensures text appears above the video */
+  z-index: 10;
   text-align: center;
 }
 
 .bg-black.bg-opacity-50 {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Adds a black background with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .text-white {
@@ -37,7 +32,7 @@
 }
 
 .text-gray-200 {
-  color: rgba(255, 255, 255, 0.8); /* Slightly muted white */
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .flex {
@@ -57,7 +52,7 @@
 }
 
 .max-w-2xl {
-  max-width: 42rem; /* Limit paragraph width for better readability */
+  max-width: 42rem;
 }
 
 .shadow-lg {
