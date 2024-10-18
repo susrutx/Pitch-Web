@@ -6,10 +6,10 @@ import heroVideo from "assets/videos/vid5.mp4";
 
 export default function Hero() {
   return (
-    <section className="relative services-section">
+    <section className="relative services-section2">
       {/* Background Video */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover opacity-50"
+        className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
         muted
         loop
@@ -25,13 +25,6 @@ export default function Hero() {
           Preserving Freshness <br />
           with Precision and Care.
         </h2>
-
-        {/* <p className="text-xl font-light text-white leading-relaxed max-w-2xl mb-10">
-          We provide advanced cold storage solutions for preserving fruits,
-          vegetables, and local produce. Our 7,422 MT capacity ensures your
-          perishable goods remain fresh and secure.
-        </p> */}
-
         <Fade direction="up" delay={500} triggerOnce>
           <Button
             href="/project"

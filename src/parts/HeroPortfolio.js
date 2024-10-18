@@ -62,9 +62,13 @@ export default function HeroPortfolio() {
         </Fade>
         <Fade direction="up" delay={500} triggerOnce>
           <p className="text-lg font-light text-gray-400 leading-relaxed">
-            At Shree Cold Storage, we provide reliable cold storage solutions
-            for perishable goods with advanced technology and customer-centric
-            service.
+            At Shree Cold Storage, we provide advanced, energy-efficient cold
+            storage solutions with customized temperature control and flexible
+            options. Our facility includes a dedicated weighbridge, ample shed
+            for loading and unloading in any climate, and conveyor systems for
+            seamless movement of goods across all floors. We are a trusted
+            partner for long-term, reliable storage, ensuring product freshness
+            and safety.
           </p>
         </Fade>
       </div>

@@ -1,4 +1,4 @@
-.services-section {
+.services-section2 {
   position: relative;
   height: 100vh;
   display: flex;
@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.services-section video {
+.services-section2 video {
   position: absolute;
   top: 0;
   left: 0;
@@ -15,10 +15,9 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  opacity: 0.5;
 }
 
-.services-section .relative {
+.services-section2 .relative {
   z-index: 10;
   text-align: center;
 }
