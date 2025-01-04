@@ -4,19 +4,13 @@
 
 import React from 'react';
 
-import Button from '../elements/Button';
+import Logo from "../assets/images/Logo.png";
+
+// import Button from '../elements/Button';
 
 export default function BrandIcon() {
   return (
-    <Button
-      className=""
-      type="link"
-      href="/"
-    >
-      <p className="text-theme-blue text-4xl font-medium ">
-        Racx
-        <span className="text-theme-purple">studio</span>
-      </p>
-    </Button>
+    <img src={Logo} alt="Logo" className="w-20 h-20" />
+    
   );
 }

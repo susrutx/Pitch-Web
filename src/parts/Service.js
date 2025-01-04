@@ -1,41 +1,56 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable import/extensions */
-
 import React from 'react';
-
 import { Fade } from 'react-awesome-reveal';
+import PropTypes from 'prop-types';
 
 export default function Service({ data }) {
   return (
-    <div className="bg-gray-50">
-      <div className="container mx-auto pt-20 pb-28">
+    <div className="bg-white">
+      <div className="container mx-auto pt-10 pb-16 px-10 lg:px-32">
         <Fade direction="right" triggerOnce>
-          <h1 className="text-5xl text-theme-blue text-center font-bold">Our Service</h1>
+          <h1 className="text-3xl text-teal-500 text-center font-bold">Service We Provide</h1>
         </Fade>
         <Fade direction="left" triggerOnce>
-          <p className="font-light text-lg text-gray-400 text-center mb-12">
-            We are ready to scale up your business with our great service.
+          <p className="font-light text-sm text-gray-400 text-center mb-8">
+            The medical data remains end-to-end secured.
           </p>
         </Fade>
 
-        <div className="grid grid-rows-3 px-10 gap-8 sm:grid-cols-3 sm:grid-rows-1 sm:gap-6 xl:gap-16">
-          {
-            data.map((item, index) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <Fade direction={item.animation} delay={500 * index} key={index} triggerOnce>
-                <div>
-                  <div className="bg-white group rounded-2xl shadow-2xl border border-light-theme-purple transform transition duration-500 hover:scale-105">
-                    <img src={item.imageUrl} alt="Service" className="w-full rounded-t-2xl" />
-                    <h2 className="text-theme-blue text-center text-xl py-7 rounded-b-2xl">{item.title}</h2>
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          {data.map((item, index) => (
+            <Fade direction={item.animation} delay={300 * index} key={item.id} triggerOnce>
+              <div className="flex flex-col items-center">
+                {item.imageUrl ? (
+                  <img
+                    src={item.imageUrl}
+                    alt={item.title}
+                    className="w-full h-56 object-cover rounded-lg" // Added `rounded-lg` for rounded corners
+                  />
+                ) : (
+                  <div
+                    className="flex flex-col items-center justify-center text-center 
+                               bg-white rounded-lg w-full h-56 p-4"
+                  >
+                    <h2 className="text-teal-500 text-lg font-bold mb-2">{item.title}</h2>
+                    <h3 className="text-sm text-gray-400">{item.description}</h3>
                   </div>
-                </div>
-              </Fade>
-            ))
-          }
+                )}
+              </div>
+            </Fade>
+          ))}
         </div>
       </div>
     </div>
   );
 }
+
+Service.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      imageUrl: PropTypes.string, // Optional if a description is provided
+      animation: PropTypes.string.isRequired,
+      description: PropTypes.string, // Optional description for items without an image
+    }),
+  ).isRequired,
+};

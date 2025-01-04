@@ -1,17 +1,22 @@
 /* eslint-disable import/extensions */
 
 // Services Img Imports
-import Web from '../assets/images/Services/Web.png';
-import Mobile from '../assets/images/Services/Mobile.png';
-import UIUX from '../assets/images/Services/Design.png';
+// import { type } from '@testing-library/user-event/dist/type';
+// import Web from '../assets/images/Services/Web.png';
+// import Mobile from '../assets/images/Services/Mobile.png';
+// import UIUX from '../assets/images/Services/Design.png';
+import patient from "../assets/images/Services/patientimg.png";
+import doctor from "../assets/images/Services/doctorimg.png";
+import secure from "../assets/images/Services/secureimg.png";
 
 // Portfolio Img Imports
-import Recruiting from '../assets/images/Portfolio/Recruiting.png';
-import Stream from '../assets/images/Portfolio/Stream.png';
-import Freelance from '../assets/images/Portfolio/Freelance.png';
-import Aura from '../assets/images/Portfolio/Aura.png';
-import Surtido from '../assets/images/Portfolio/Surtido.png';
-import ManagementApp from '../assets/images/Portfolio/ManagementApp.png';
+import motive from '../assets/images/Portfolio/motive.png';
+// import Recruiting from '../assets/images/Portfolio/Recruiting.png';
+// import Stream from '../assets/images/Portfolio/Stream.png';
+// import Freelance from '../assets/images/Portfolio/Freelance.png';
+// import Aura from '../assets/images/Portfolio/Aura.png';
+// import Surtido from '../assets/images/Portfolio/Surtido.png';
+// import ManagementApp from '../assets/images/Portfolio/ManagementApp.png';
 
 // Advantages
 import Communicative from '../assets/images/Advantages/Communicative.png';
@@ -40,89 +45,116 @@ import UIUX2 from '../assets/images/TeamMembers/UIUX2.jpg';
 
 export const Services = [
   {
-    title: 'Web Development',
-    imageUrl: Web,
+    id: 1,
+    title: 'Patient',
+    imageUrl: patient,
     animation: 'left',
   },
   {
-    title: 'Mobile Development',
-    imageUrl: Mobile,
+    id: 2,
+    title: 'Patient Data Storage',
+    description: 'The patient securely stores their medical data on the server using their unique credentials (e.g., unique ID and password). This ensures that only the patient can access or share their data.',
     animation: 'up',
   },
   {
-    title: 'UI/UX Design',
-    imageUrl: UIUX,
+    id: 3,
+    title: 'Temporary Access for Doctor',
+    description: 'When visiting a doctor, the patient provides their credentials to the doctor, granting temporary access to their medical records. During this time, the doctor can review the patients past medical history and records',
+    animation: 'right',
+  },
+  {
+    id: 4,
+    title: 'Doctor',
+    imageUrl: doctor,
+    animation: 'left',
+  },
+  {
+    id: 5,
+    title: 'Security',
+    imageUrl: secure,
+    animation: 'up',
+  },
+  {
+    id: 6,
+    title: 'Updating Records and Access Control',
+    description: 'The doctor can update the patient’s medical records by adding recent check-up data. Once the limited access time expires, the doctor can no longer access the patients data without receiving new permission from the patient. This ensures the patient retains full control over their medical data',
     animation: 'right',
   },
 ];
 
 export const Portfolios = [
   {
-    id: 'asd1293uasdads1',
-    title: 'Recruiting App',
-    imageUrl: Recruiting,
-    type: 'Mobile Apps',
-    responsibility: [
-      'Mobile Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15164950-Recruiting-app',
+    id: 1,
+    title: 'motive',
+    imageUrl: motive,
+    type: 'motive',
   },
-  {
-    id: 'asd1293uhjkhkjh2',
-    title: 'Stream+',
-    imageUrl: Stream,
-    type: 'Mobile Apps',
-    responsibility: [
-      'Mobile Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15276430-Stream',
-  },
-  {
-    id: 'asd1293uvbvcbbd3',
-    title: 'Freelance',
-    imageUrl: Freelance,
-    type: 'Mobile Apps',
-    responsibility: [
-      'Mobile Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15223131-Freelance-Mobile-App-Concept',
-  },
-  {
-    id: 'asd1293ufgdfgs4',
-    title: 'Aura',
-    imageUrl: Aura,
-    type: 'Website',
-    responsibility: [
-      'Web Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15176338-Aura-Website-Main-Page',
-  },
-  {
-    id: 'asd1293ulskmnb5',
-    title: 'Surtido Rico',
-    imageUrl: Surtido,
-    type: 'Website',
-    responsibility: [
-      'Web Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15173118-Surtido-Rico',
-  },
-  {
-    id: 'asd1293ulkmnbj6',
-    title: 'Courses Management',
-    imageUrl: ManagementApp,
-    type: 'Website',
-    responsibility: [
-      'Web Development',
-      'UI/UX Design',
-    ],
-    credit: 'https://dribbble.com/shots/15197890-Courses-Management-and-Promoting-Web-App',
-  },
+  // {
+  //   id: 1,
+  //   title: 'Recruiting App',
+  //   imageUrl: Recruiting,
+  //   type: 'Mobile Apps',
+  //   responsibility: [
+  //     'Mobile Development',
+  //     'UI/UX Design',
+  //   ],
+  //   credit: 'https://dribbble.com/shots/15164950-Recruiting-app',
+  // },
+  // {
+  //   id: 'asd1293uhjkhkjh2',
+  //   title: 'Stream+',
+  //   imageUrl: Stream,
+  //   type: 'Mobile Apps',
+  //   responsibility: [
+  //     'Mobile Development',
+  //     'UI/UX Design',
+  //   ],
+  //   credit: 'https://dribbble.com/shots/15276430-Stream',
+  // },
+  // {
+  //   id: 'asd1293uvbvcbbd3',
+  //   title: 'Freelance',
+  //   imageUrl: Freelance,
+  //   type: 'Mobile Apps',
+  //   responsibility: [
+  //     'Mobile Development',
+  //     'UI/UX Design',
+  //   ],
+  //   credit: 'https://dribbble.com/shots/15223131-Freelance-Mobile-App-Concept',
+  // },
+  // {
+  //   id: 'asd1293ufgdfgs4',
+  //   title: 'Aura',
+  //   imageUrl: Aura,
+  //   type: 'Website',
+  //   responsibility: [
+  //     'Web Development',
+  //     'UI/UX Design',
+  //   ],
+  //   credit: 'https://dribbble.com/shots/15176338-Aura-Website-Main-Page',
+  // },
+  // {
+  //   id: 'asd1293ulskmnb5',
+  //   title: 'Surtido Rico',
+  //   imageUrl: Surtido,
+  //   type: 'Website',
+  //   responsibility: [
+  //     'Web Development',
+  //     'UI/UX Design',
+  //   ],
+  //   credit: 'https://dribbble.com/shots/15173118-Surtido-Rico',
+  // },
+  // {
+  //   id: 'asd1293ulkmnbj6',
+  //   title: 'Courses Management',
+  //   imageUrl: ManagementApp,
+  //   type: 'Website',
+  //   responsibility: [
+  //     'Web Development',
+  //     'UI/UX Design',
+  //   ],
+  //   credit: 'https://dribbble.com/shots/15197890-Courses-Management-and-Promoting-Web-App',
+  // },
 ];
 
 export const Advantages = [

@@ -22,7 +22,7 @@ export default class ProjectPage extends Component {
       <>
         <Header />
         <HeroPortfolio />
-        <AllPortfolio data={Portfolios} />
+        {/* <AllPortfolio data={Portfolios} /> */}
         <Discuss />
         <Footer />
       </>
