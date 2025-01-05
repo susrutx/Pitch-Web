@@ -4,11 +4,11 @@
 import React, { Component } from 'react';
 
 import Header from 'parts/Header';
-import HeroTeam from 'parts/HeroTeam';
-import AllTeam from 'parts/AllTeam';
+import Heroaboutus from 'parts/Heroaboutus';
+// import AllTeam from 'parts/AllTeam';
 import Footer from 'parts/Footer';
 
-import { TeamMembers } from 'json/landingPageData';
+// import { TeamMembers } from 'json/landingPageData';
 
 export default class TeamPage extends Component {
   componentDidMount() {
@@ -19,8 +19,8 @@ export default class TeamPage extends Component {
     return (
       <>
         <Header />
-        <HeroTeam />
-        <AllTeam data={TeamMembers} />
+        <Heroaboutus />
+        {/* <AllTeam data={TeamMembers} /> */}
         <Footer />
       </>
     );
