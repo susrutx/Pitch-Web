@@ -5,10 +5,10 @@ import React, { Component } from 'react';
 
 import Header from 'parts/Header';
 import Heroaboutus from 'parts/Heroaboutus';
-// import AllTeam from 'parts/AllTeam';
+import AllTeam from 'parts/AllTeam';
 import Footer from 'parts/Footer';
 
-// import { TeamMembers } from 'json/landingPageData';
+import { TeamMembers } from 'json/landingPageData';
 
 export default class TeamPage extends Component {
   componentDidMount() {
@@ -20,7 +20,7 @@ export default class TeamPage extends Component {
       <>
         <Header />
         <Heroaboutus />
-        {/* <AllTeam data={TeamMembers} /> */}
+        <AllTeam data={TeamMembers} />
         <Footer />
       </>
     );

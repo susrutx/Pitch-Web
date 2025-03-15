@@ -34,14 +34,14 @@ import CEO from '../assets/images/TeamMembers/CEO.jpg';
 import HRD from '../assets/images/TeamMembers/HRD.jpg';
 import Finance from '../assets/images/TeamMembers/Finance.jpg';
 import ProjectManager from '../assets/images/TeamMembers/Project-manager.jpg';
-import Frontend1 from '../assets/images/TeamMembers/Frontend1.jpg';
-import Frontend2 from '../assets/images/TeamMembers/Frontend2.jpg';
-import Backend1 from '../assets/images/TeamMembers/Backend1.jpg';
-import Backend2 from '../assets/images/TeamMembers/Backend2.jpg';
-import Mobile1 from '../assets/images/TeamMembers/Mobile1.jpg';
-import Mobile2 from '../assets/images/TeamMembers/Mobile2.jpg';
-import UIUX1 from '../assets/images/TeamMembers/UIUX1.jpg';
-import UIUX2 from '../assets/images/TeamMembers/UIUX2.jpg';
+// import Frontend1 from '../assets/images/TeamMembers/Frontend1.jpg';
+// import Frontend2 from '../assets/images/TeamMembers/Frontend2.jpg';
+// import Backend1 from '../assets/images/TeamMembers/Backend1.jpg';
+// import Backend2 from '../assets/images/TeamMembers/Backend2.jpg';
+// import Mobile1 from '../assets/images/TeamMembers/Mobile1.jpg';
+// import Mobile2 from '../assets/images/TeamMembers/Mobile2.jpg';
+// import UIUX1 from '../assets/images/TeamMembers/UIUX1.jpg';
+// import UIUX2 from '../assets/images/TeamMembers/UIUX2.jpg';
 
 export const Services = [
   {
@@ -52,14 +52,14 @@ export const Services = [
   },
   {
     id: 2,
-    title: 'Patient Data Storage',
-    description: 'The patient securely stores their medical data on the server using their unique credentials (e.g., unique ID and password). This ensures that only the patient can access or share their data.',
+    title: 'MediCore',
+    description: 'OneApp & EHR Integration- A unified application for managing patient health records across multiple healthcare providers along with Seamless integration of existing EHR systems to enable interoperability and centralized access to patient records..',
     animation: 'up',
   },
   {
     id: 3,
-    title: 'Temporary Access for Doctor',
-    description: 'When visiting a doctor, the patient provides their credentials to the doctor, granting temporary access to their medical records. During this time, the doctor can review the patients past medical history and records',
+    title: 'NovaIQ',
+    description: 'A Local AI to deploy AI models on local servers or edge devices for improved data privacy and low-latency processing making it ideal for personal devices of doctors and patients and a Global AI enabling Cloud-based AI solutions offering scalable computing resources and centralized model management for Zero Day Analysis and Cohort Analysis of new diseases.',
     animation: 'right',
   },
   {
@@ -76,8 +76,8 @@ export const Services = [
   },
   {
     id: 6,
-    title: 'Updating Records and Access Control',
-    description: 'The doctor can update the patient’s medical records by adding recent check-up data. Once the limited access time expires, the doctor can no longer access the patients data without receiving new permission from the patient. This ensures the patient retains full control over their medical data',
+    title: 'QuantaLock',
+    description: 'Seamless integration with any existing blockchain infrastructures with advanced cryptographic protocols designed to protect sensitive data against emerging threats from quantum computing, ensuring long-term security and compliance. Data is secured with post-quantum cryptography, further enhanced with FPGA for faster encryption and decryption',
     animation: 'right',
   },
 ];
@@ -205,63 +205,24 @@ export const Testimonials = [
 
 export const TeamMembers = [
   {
-    name: 'Rach David',
-    position: 'CEO',
+    name: 'Asmit Ganguly',
+    position: 'CEO & CTO',
     imageUrl: CEO,
   },
   {
-    name: 'Pauline Sydney',
-    position: 'HRD',
+    name: 'Dibyanayan Bandyopadhyay',
+    // position: 'HRD',
     imageUrl: HRD,
   },
   {
-    name: 'Granger Watterson',
-    position: 'Finance',
+    name: 'Suprajit Dewanji',
+    // position: 'Finance',
     imageUrl: Finance,
   },
   {
-    name: 'Tom Jimmy',
-    position: 'Project Manager',
+    name: 'Sukrit Ghosh',
+    // position: 'Project Manager',
     imageUrl: ProjectManager,
   },
-  {
-    name: 'Jim Hendrix',
-    position: 'Front-end Developer',
-    imageUrl: Frontend1,
-  },
-  {
-    name: 'Calvin Max',
-    position: 'Front-end Developer',
-    imageUrl: Frontend2,
-  },
-  {
-    name: 'Hawkins Jim',
-    position: 'Back-end Developer',
-    imageUrl: Backend1,
-  },
-  {
-    name: 'Don Bizaro',
-    position: 'Back-end Developer',
-    imageUrl: Backend2,
-  },
-  {
-    name: 'Bill Markinson',
-    position: 'Mobile Developer',
-    imageUrl: Mobile1,
-  },
-  {
-    name: 'Igor Kavarov',
-    position: 'Mobile Developer',
-    imageUrl: Mobile2,
-  },
-  {
-    name: 'Freddie Curl',
-    position: 'UI/UX Designer',
-    imageUrl: UIUX2,
-  },
-  {
-    name: 'Monica Lovegood',
-    position: 'UI/UX Designer',
-    imageUrl: UIUX1,
-  },
+
 ];
