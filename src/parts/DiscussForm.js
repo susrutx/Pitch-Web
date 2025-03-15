@@ -15,10 +15,10 @@ export const ContactUs = () => (
     <Fade direction="up" triggerOnce>
       <div className="text-center">
         <p className="text-lg text-gray-600 mb-4">
-          Email: <a href="mailto:contact@susrutx.com" className="text-teal-500 underline">contact@susrutx.com</a>
+          Email: <a href="mailto:contact@susrutx.com" className="text-teal-500 underline">susrutx@gmail.com</a>
         </p>
         <p className="text-lg text-gray-600 mb-4">
-          Phone: <a href="tel:+1234567890" className="text-teal-500 underline">+1 234 567 890</a>
+          Phone: <a href="tel:+1234567890" className="text-teal-500 underline">+91 8918473362</a>
         </p>
         <p className="text-lg text-gray-600 mb-4">
           LinkedIn: <a href="https://linkedin.com/company/susrutx" target="_blank" rel="noopener noreferrer" className="text-teal-500 underline">linkedin.com/company/susrutx</a>

@@ -8,6 +8,9 @@ import Fade from 'react-awesome-reveal';
 export default function AllTeam({ data }) {
   return (
     <section className="container mx-0 sm:mx-auto">
+      <h1 className="text-3xl sm:text-4xl font-bold text-center text-teal-500 mb-12">
+        Our Team
+      </h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-32 sm:gap-14 lg:gap-10 mx-16 justify-items-center">
         {
           data.map((item, index) => (

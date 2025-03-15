@@ -30,10 +30,10 @@ import Reiner from '../assets/images/Testimonials/Reiner.jpg';
 import Kruger from '../assets/images/Testimonials/Kruger.jpg';
 
 // TeamMembers
-import CEO from '../assets/images/TeamMembers/CEO.jpg';
-import HRD from '../assets/images/TeamMembers/HRD.jpg';
-import Finance from '../assets/images/TeamMembers/Finance.jpg';
-import ProjectManager from '../assets/images/TeamMembers/Project-manager.jpg';
+import CEO from '../assets/images/TeamMembers/asmit.jpg';
+import VP from '../assets/images/TeamMembers/dibya.jpg';
+import CTO from '../assets/images/TeamMembers/suprajit.jpg';
+import CMO from '../assets/images/TeamMembers/sukrit.jpg';
 // import Frontend1 from '../assets/images/TeamMembers/Frontend1.jpg';
 // import Frontend2 from '../assets/images/TeamMembers/Frontend2.jpg';
 // import Backend1 from '../assets/images/TeamMembers/Backend1.jpg';
@@ -206,23 +206,23 @@ export const Testimonials = [
 export const TeamMembers = [
   {
     name: 'Asmit Ganguly',
-    position: 'CEO & CTO',
+    position: 'CEO',
     imageUrl: CEO,
   },
   {
     name: 'Dibyanayan Bandyopadhyay',
-    // position: 'HRD',
-    imageUrl: HRD,
+    position: 'VP',
+    imageUrl: VP,
   },
   {
     name: 'Suprajit Dewanji',
-    // position: 'Finance',
-    imageUrl: Finance,
+    position: 'CTO',
+    imageUrl: CTO,
   },
   {
     name: 'Sukrit Ghosh',
-    // position: 'Project Manager',
-    imageUrl: ProjectManager,
+    position: 'CMO',
+    imageUrl: CMO,
   },
 
 ];

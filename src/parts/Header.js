@@ -53,7 +53,7 @@ export default function Header() {
             About Us
           </Button>
         </li>
-        <li className="py-2 lg:py-0">
+        {/* <li className="py-2 lg:py-0">
           <Button
             className={`${
               path === '/project' ? 'text-teal-500' : 'text-black'
@@ -63,7 +63,7 @@ export default function Header() {
           >
             Pricing
           </Button>
-        </li>
+        </li> */}
         <li>
           <Button
             className="font-medium text-lg mx-auto ml-3 px-6 py-2 bg-teal-600 text-white rounded-full border-2 border-teal-600 hover:bg-teal-700 transition duration-200"
